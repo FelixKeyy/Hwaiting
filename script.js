@@ -45,7 +45,7 @@ yesBtn.addEventListener('click', () => {
     song.play();
     slideshow.style.display = 'block';
     showImage();
-  }, 1000);
+  }, 4000);
 });
 
 // Function to fade images & captions
@@ -61,5 +61,5 @@ function showImage() {
   currentImg = (currentImg + 1) % images.length;
   currentMsg = (currentMsg + 1) % messages.length;
 
-  setTimeout(showImage, 4000);
+  setTimeout(showImage, 6000);
 }
