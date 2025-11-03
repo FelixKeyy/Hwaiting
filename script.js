@@ -27,9 +27,9 @@ noBtn.addEventListener('click', () => {
 
   // Optional: small comforting messages
   const replies = [
-    "Teken tombol yang sebelahnya !!",
+    "Teken tombol yang satunya!!",
     "Salah teken kocak!!!",
-    "Press yang sebelahnyaaaa",
+    "Press yang satunyaaaaaaa",
     "Press SEBELAHHHHH"
   ];
   const randomReply = replies[Math.floor(Math.random() * replies.length)];
