@@ -16,7 +16,7 @@ const messages = [
   "See? You’re still capable of smiling 🌸",
   "Even on the hard days, you’re not alone 💫",
   "I’m proud of you, even on the days when you feel small 🫶",
-  "You’re loved — more than you realize 💖",
+  "You’re loved, more than you realize 💖",
   "Whenever you forget, just come back here 🌷"
 ];
 
