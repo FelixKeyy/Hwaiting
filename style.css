@@ -1,69 +1,91 @@
-/* General styling */
 body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffe6f0; /* soft pink */
   font-family: 'Montserrat', sans-serif;
-}
-
-/* Container */
-.container {
+  background: linear-gradient(135deg, #ffd8e4, #ffeaf2);
+  color: #4a4a4a;
   text-align: center;
-  padding: 20px;
-  max-width: 400px;
-  width: 90%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
 }
 
-/* Image styling */
-.photo {
-  width: 100%;
-  max-width: 300px;
-  aspect-ratio: 1 / 1; /* makes it 1x1 square */
-  object-fit: cover;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Text styling */
-.message {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  color: #444;
-  line-height: 1.5;
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  transition: opacity 1s ease;
+  padding: 0 20px;
 }
 
-/* Button styling */
+.buttons {
+  margin-top: 10px;
+}
+
 button {
-  background-color: #ffb6c1;
-  color: white;
+  padding: 15px 35px;
+  margin: 10px;
+  font-size: 18px;
   border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 1rem;
+  border-radius: 12px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-weight: 600;
+}
+
+#yes {
+  background-color: #ff8fb1;
+  color: white;
+}
+
+#no {
+  background-color: #bbb;
+  color: white;
 }
 
 button:hover {
-  background-color: #ff99aa;
+  transform: scale(1.05);
 }
 
-/* Responsive fixes */
-@media (max-width: 600px) {
-  .container {
-    max-width: 90%;
-    padding: 10px;
-  }
+.slideshow {
+  display: none;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .message {
-    font-size: 1rem;
-  }
+.image-wrapper {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin-bottom: 30px;
+}
 
-  button {
-    width: 100%;
-  }
+.fade {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 1.5s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
+
+#caption {
+  font-size: 1.1rem;
+  color: #555;
+  opacity: 0;
+  transition: opacity 1s;
+  max-width: 320px;
 }

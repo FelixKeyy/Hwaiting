@@ -16,7 +16,7 @@ const messages = [
   "See? You’re still capable of smiling 🌸",
   "Even on the hard days, you’re not alone 💫",
   "I’m proud of you, even on the days when you feel small 🫶",
-  "You’re loved, more than you realize 💖",
+  "You’re loved — more than you realize 💖",
   "Whenever you forget, just come back here 🌷"
 ];
 
@@ -27,10 +27,10 @@ noBtn.addEventListener('click', () => {
 
   // Optional: small comforting messages
   const replies = [
-    "Teken tombol yang satunya!!",
-    "Salah teken kocak!!!",
-    "Press yang satunyaaaaaaa",
-    "Press SEBELAHHHHH"
+    "Teken tombol yang satunyaa",
+    "Teken yang pink ",
+    "SALAHH TEKENNN",
+    "Teken yang satunya woi !"
   ];
   const randomReply = replies[Math.floor(Math.random() * replies.length)];
   message.textContent = randomReply;
@@ -45,7 +45,7 @@ yesBtn.addEventListener('click', () => {
     song.play();
     slideshow.style.display = 'block';
     showImage();
-  }, 4000);
+  }, 5000);
 });
 
 // Function to fade images & captions
@@ -61,5 +61,5 @@ function showImage() {
   currentImg = (currentImg + 1) % images.length;
   currentMsg = (currentMsg + 1) % messages.length;
 
-  setTimeout(showImage, 6000);
+  setTimeout(showImage, 5000);
 }
